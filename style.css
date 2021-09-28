@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background: url('./students.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  color:#ffffff;
+}
+
+.container__overlay {
+  background-color: #193765e3;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center
+}
+
+.container__overlay--heading {
+position: absolute;
+top: 30%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.container__overlay--heading h1 {
+  font-size:5rem;
+}
+
+.container__overlay--heading p{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.75rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+button {
+  background-color:transparent;
+  border: solid 1px #ffffff;padding: 1rem 2rem;
+  border-radius:2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .container__overlay {
+text-align: center;
+  }
+
+  .container__overlay--heading{
+    padding: 1rem;
+  }
+  .container__overlay--heading h1 {
+    font-size:3rem;
+  }
+  
+  .container__overlay--heading p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    word-spacing: -3px;;
+  }
+  button{
+    margin-top: 1rem;
+  }
+  
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container__overlay--heading {
+    position: absolute;
+    top: 15%;
+
+    }
+}
+
+@media (max-width: 280px)  {
+  .container__overlay--heading {
+    position: absolute;
+    top: 20%
+    }
+}
+
